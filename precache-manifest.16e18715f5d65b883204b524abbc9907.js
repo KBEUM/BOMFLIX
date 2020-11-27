@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "694c8fd6490778729c08c3a375edb791",
+    "revision": "3312f1a604272a5fb51123239735ddc6",
     "url": "/bomflix/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bomflix/static/css/2.b8329af8.chunk.css"
   },
   {
-    "revision": "72c50dbd715ff2cbce42",
+    "revision": "8c1851095f3a6b774bbd",
     "url": "/bomflix/static/css/main.dcdcdd93.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bomflix/static/js/2.dbe8450f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72c50dbd715ff2cbce42",
-    "url": "/bomflix/static/js/main.549b8d69.chunk.js"
+    "revision": "8c1851095f3a6b774bbd",
+    "url": "/bomflix/static/js/main.f2de308f.chunk.js"
   },
   {
     "revision": "88e323b3f9d307939565",
