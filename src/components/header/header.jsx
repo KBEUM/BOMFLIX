@@ -23,8 +23,7 @@ const Header = ({movieList, searchMovieInfo}) => {
     const onSubmit = (event)=> {
         event.preventDefault();
         const query = inputRef.current.value;
-        movieList.searchMovie(query).then(movie=> {searchMovieInfo(movie)
-            console.log(movie)});
+        movieList.searchMovie(query).then(movie=> {searchMovieInfo(movie)});
     }
 
     const bomClick = () => {
@@ -48,7 +47,7 @@ const Header = ({movieList, searchMovieInfo}) => {
                     <button className={styles.btn}><i className={`fas fa-search ${styles.emoji}`} /></button>
                 </form>
                 <div>
-                <img className={styles.profile} src="/image/profile.jpg" alt="profile"/>
+                <img className={styles.profile} src="./image/profile.jpg" alt="profile"/>
                 </div>
             </div>
         </header>

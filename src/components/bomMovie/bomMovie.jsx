@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import { koreaMovie, recomendMovie } from '../../service/movieListHardCoding';
 import Header from '../header/header';
@@ -8,13 +7,10 @@ import MovieList from '../movie_list/movieList';
 
 const BomMovie = ({movieList}) => {
     
-    const [randomMovie, setRandomMovie] = useState([])
+    const firstRandomMovie = recomendMovie[Math.floor(Math.random() * recomendMovie.length)]
+    const [randomMovie, setRandomMovie] = useState(firstRandomMovie)
     const [movieKey, setMovieKey] = useState('')
     const [movieId, setMovieId] = useState('')
-
-    useEffect(()=>{
-    setRandomMovie(recomendMovie[Math.floor(Math.random() * recomendMovie.length)])
-    },[])
 
     const getVideo = (movie) => {
         setMovieId(movie.id)

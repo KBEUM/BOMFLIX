@@ -10,7 +10,7 @@ const Home = ({movieList}) => {
     const [upcoming, setUpcoming] = useState([])
     const [popular, setPopular] = useState([])
     const [topRated, setTopRated] = useState([])
-    const [randomMovie, setRandomMovie] = useState([])
+    const [randomMovie, setRandomMovie] = useState()
     const [movieKey, setMovieKey] = useState('')
     const [movieId, setMovieId] = useState('')
 
