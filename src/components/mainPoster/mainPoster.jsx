@@ -20,13 +20,12 @@ const MainPoster = ({movie, getVideo, movieKey, movieId}) => {
     getVideo(movie);
     if(currentMovie.id === movieId) {
         setCurrentMovie([])}
-    console.log(movie.overview.length)
     }
 
 
     return(
         <section className={styles.container}
-        style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie? movie.backdrop_path || movie.poster_path : ''})`,
+        style={{backgroundImage: `url(//image.tmdb.org/t/p/original/${movie? movie.backdrop_path || movie.poster_path : ''})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center'
                 }}>
@@ -40,7 +39,7 @@ const MainPoster = ({movie, getVideo, movieKey, movieId}) => {
             </div>
             {(currentMovie.id === movieId) ?  
             <iframe className={styles.video} id="player" type="text/html" title="mainPoster"
-            src={`http://www.youtube.com/embed/${movieKey}?enablejsapi=1`}
+            src={`//www.youtube.com/embed/${movieKey}?enablejsapi=1`}
             allow="autoplay" frameBorder="0" allowFullScreen="allowFullScreen"></iframe> :
             <div className={styles.fade}></div>}
         </section>

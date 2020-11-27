@@ -10,7 +10,7 @@ const Movie = ({movie, addClick}) => {
     return (
         <div className={styles.movieinfo} onClick={onClick}>
             <img className={styles.img} 
-            src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="poster"/>
+            src={`//image.tmdb.org/t/p/original/${movie.poster_path}`} alt="poster"/>
         </div>
     )};
 
