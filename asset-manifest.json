@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bomflix/static/css/main.dcdcdd93.chunk.css",
-    "main.js": "/bomflix/static/js/main.5780db0d.chunk.js",
-    "main.js.map": "/bomflix/static/js/main.5780db0d.chunk.js.map",
+    "main.js": "/bomflix/static/js/main.d87cffce.chunk.js",
+    "main.js.map": "/bomflix/static/js/main.d87cffce.chunk.js.map",
     "runtime-main.js": "/bomflix/static/js/runtime-main.e1af730f.js",
     "runtime-main.js.map": "/bomflix/static/js/runtime-main.e1af730f.js.map",
     "static/css/2.b8329af8.chunk.css": "/bomflix/static/css/2.b8329af8.chunk.css",
     "static/js/2.dbe8450f.chunk.js": "/bomflix/static/js/2.dbe8450f.chunk.js",
     "static/js/2.dbe8450f.chunk.js.map": "/bomflix/static/js/2.dbe8450f.chunk.js.map",
     "index.html": "/bomflix/index.html",
-    "precache-manifest.af6a031ea57c2fca109ff2d743f204e8.js": "/bomflix/precache-manifest.af6a031ea57c2fca109ff2d743f204e8.js",
+    "precache-manifest.c361cff6a50f9efa5052b77db9fe5492.js": "/bomflix/precache-manifest.c361cff6a50f9efa5052b77db9fe5492.js",
     "service-worker.js": "/bomflix/service-worker.js",
     "static/css/2.b8329af8.chunk.css.map": "/bomflix/static/css/2.b8329af8.chunk.css.map",
     "static/css/main.dcdcdd93.chunk.css.map": "/bomflix/static/css/main.dcdcdd93.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.b8329af8.chunk.css",
     "static/js/2.dbe8450f.chunk.js",
     "static/css/main.dcdcdd93.chunk.css",
-    "static/js/main.5780db0d.chunk.js"
+    "static/js/main.d87cffce.chunk.js"
   ]
 }
