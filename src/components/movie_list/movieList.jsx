@@ -77,7 +77,7 @@ const MovieList = ({title, typeOfList, movieList, getVideo, movieKey, movieId}) 
             </ul>
             {(currentMovie.id === movieId) && 
             <iframe className={styles.video} id="player" type="text/html" title="movieList"
-            src={`//www.youtube.com/embed/${movieKey}?enablejsapi=1`} 
+            src={`//www.youtube.com/embed/${movieKey}?enablejsapi=1&autoplay=1&mute=1`} 
             allow="autoplay" frameBorder="0" allowFullScreen="allowFullScreen"></iframe> }
         </section>        
     )};

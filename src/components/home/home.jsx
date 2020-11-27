@@ -51,7 +51,7 @@ const Home = ({movieList}) => {
                         getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
                         />
             <MovieList title="인기상영" typeOfList={popular} movieList={movieList}
-                        getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
+                        getVideo={getVideo} movieKey={movieKey} movieId={movieId}
                         />
             <MovieList title="top rated" typeOfList={topRated} movieList={movieList}
                         getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
