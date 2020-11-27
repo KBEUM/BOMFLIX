@@ -1,0 +1,46 @@
+.section {
+}
+
+.title {
+  margin: 0;
+  margin-left: 3vw;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 4vw;
+  cursor: pointer;
+  width: 4%;
+  height: 70%;
+  position: absolute;
+  top: 14%;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.video {
+  width: 100%;
+  height: 480px;
+}
