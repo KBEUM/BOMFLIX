@@ -7,7 +7,7 @@ import BomMovie from './components/bomMovie/bomMovie';
 function App({movieList}) {
   return (
     <div className={styles.main}>
-      <BrowserRouter>
+      <BrowserRouter basename="/bomflix">
         <Switch>
           <Route exact path="/">
             <Home movieList={movieList} />
