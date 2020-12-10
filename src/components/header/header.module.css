@@ -1,7 +1,7 @@
-@value movieBlack, movieWhite from "../../common/colors.css";
+@value movieWhite, bomflixBlack, movieRed from "../../common/colors.css";
 
 .header {
-  background: linear-gradient(#111, transparent);
+  background: linear-gradient(bomflixBlack, transparent);
   display: flex;
   color: movieWhite;
   width: 100%;
@@ -30,7 +30,7 @@
 .logo {
   font-size: 1.6rem;
   font-weight: 600;
-  color: red;
+  color: movieRed;
   margin: 0;
   cursor: pointer;
 }
@@ -56,19 +56,19 @@
 
 .search {
   outline: none;
-  border: 2px solid white;
+  border: 2px solid movieWhite;
   background-color: rgba(17, 17, 17, 0.3);
   padding: 0.5rem;
 }
 
 .search::placeholder {
-  color: white;
+  color: movieWhite;
   font-size: 0.8rem;
   opacity: 0.5;
 }
 
 .search:focus {
-  color: white;
+  color: movieWhite;
   font-size: 0.8rem;
 }
 
@@ -76,7 +76,7 @@
   outline: none;
   border: none;
   background: transparent;
-  color: white;
+  color: movieWhite;
   font-size: 1.3rem;
   cursor: pointer;
 }

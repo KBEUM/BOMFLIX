@@ -5,7 +5,7 @@ const Movie = ({movie, addClick}) => {
 
     const onClick = () => {
         addClick(movie)
-    }
+    };
 
     return (
         <div className={styles.movieinfo} onClick={onClick}>

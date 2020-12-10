@@ -1,10 +1,9 @@
-.section {
-}
+@value movieWhite from "../../common/colors.css";
 
 .title {
   margin: 0;
   margin-left: 3vw;
-  color: white;
+  color: movieWhite;
   font-size: 2rem;
   position: absolute;
 }
@@ -18,7 +17,7 @@
 .prev,
 .next {
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: movieWhite;
   font-size: 4vw;
   cursor: pointer;
   width: 4%;

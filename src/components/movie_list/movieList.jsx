@@ -13,6 +13,7 @@ const MovieList = ({title, typeOfList, movieList, getVideo, movieKey, movieId}) 
             {...props}
             className={styles.prev}>{`<`}</button>
     );
+
     const ArrowRight = ({currentSlide, slideCount, ...props}) => (
         <button
             {...props}
@@ -54,7 +55,7 @@ const MovieList = ({title, typeOfList, movieList, getVideo, movieKey, movieId}) 
         }
       ] 
     };    
-
+;
     const [currentMovie, setCurrentMovie] = useState([])
 
     const addClick = (movie)=> {
@@ -62,10 +63,10 @@ const MovieList = ({title, typeOfList, movieList, getVideo, movieKey, movieId}) 
     getVideo(movie);
     if(currentMovie.id === movieId) {
         setCurrentMovie([])}
-    }
+    };
 
     return(
-        <section className={styles.section}>
+        <section>
             <h1 className={styles.title}>{title}</h1>
             <ul className={styles.list}> 
                 <Slider {...settings}>

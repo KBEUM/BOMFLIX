@@ -7,9 +7,9 @@ import styles from './header.module.css'
 
 const Header = ({movieList, searchMovieInfo}) => {
 
-    const inputRef = useRef()
+    const inputRef = useRef();
     const history = useHistory();
-    const [backgroundStyle, setBackgroundStyle] = useState(false)    
+    const [backgroundStyle, setBackgroundStyle] = useState(false)   ; 
 
     useEffect(()=>{
         window.addEventListener("scroll", () => {
@@ -18,21 +18,22 @@ const Header = ({movieList, searchMovieInfo}) => {
             else {
                 setBackgroundStyle(false)
         }});
-    }, [])
+    }, []);
 
     const onSubmit = (event)=> {
         event.preventDefault();
         const query = inputRef.current.value;
-        movieList.searchMovie(query).then(movie=> {searchMovieInfo(movie)});
-    }
+        movieList.searchMovie(query).then(movie => {searchMovieInfo(movie)});
+        inputRef.current.value = "";
+    };
 
     const bomClick = () => {
         history.push("/bom")
-    }
+    };
 
     const homeClick = () => {
         history.push("/")
-    }
+    };
 
     return (
         <header className={!backgroundStyle ? `${styles.header}` : `${styles.header} ${styles.scroll}`}>

@@ -1,16 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
-import { koreaMovie, recomendMovie } from '../../service/movieListHardCoding';
+import { koreaMovie, recomendMovie, recomend2ndMovie } from '../../service/movieListHardCoding';
 import Header from '../header/header';
 import MainPoster from '../mainPoster/mainPoster';
 import MovieList from '../movie_list/movieList';
 
 const BomMovie = ({movieList}) => {
     
-    const firstRandomMovie = recomendMovie[Math.floor(Math.random() * recomendMovie.length)]
-    const [randomMovie, setRandomMovie] = useState(firstRandomMovie)
-    const [movieKey, setMovieKey] = useState('')
-    const [movieId, setMovieId] = useState('')
+    const randomMovieArr = [...recomendMovie, ...recomend2ndMovie]
+    const firstRandomMovie = randomMovieArr[Math.floor(Math.random() * randomMovieArr.length)];
+    const [randomMovie, setRandomMovie] = useState(firstRandomMovie);
+    const [movieKey, setMovieKey] = useState('');
+    const [movieId, setMovieId] = useState('');
 
     const getVideo = (movie) => {
         setMovieId(movie.id)
@@ -21,12 +22,11 @@ const BomMovie = ({movieList}) => {
           else {
           setMovieKey(data.key)}
         })
-      }
+      };
 
     const searchMovieInfo = (searchMovie) => {
       setRandomMovie(searchMovie)
-    }
-
+    };
 
     return(
         <div>
@@ -36,6 +36,9 @@ const BomMovie = ({movieList}) => {
                         getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
                         />
             <MovieList title="보고 보고 또 보고 생각나면 다시 보는 영화" typeOfList={recomendMovie} movieList={movieList} 
+                        getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
+                        />
+            <MovieList title="옳게 된 영화란 이런거지" typeOfList={recomend2ndMovie} movieList={movieList}
                         getVideo={getVideo} movieKey={movieKey} movieId={movieId} 
                         />
             <MovieList title="미워도 다시 한번 한국영화" typeOfList={koreaMovie} movieList={movieList}
