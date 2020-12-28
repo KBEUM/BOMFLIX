@@ -28,7 +28,7 @@ const Header = ({movieList, searchMovieInfo}) => {
     };
 
     const bomClick = () => {
-        history.push("/bom")
+        history.push("/mymovie")
     };
 
     const homeClick = () => {
