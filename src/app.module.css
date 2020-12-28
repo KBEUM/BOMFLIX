@@ -1,8 +1,0 @@
-@value bomflixBlack from "./common/colors.css";
-
-.main {
-  background-color: bomflixBlack;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}

@@ -2,8 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Header from '../header/header';
-import MainPoster from '../mainPoster/mainPoster';
-import MovieList from '../movie_list/movieList';
+import MainPoster from '../main_poster/main_poster';
+import MovieList from '../movie_list/movie_list';
 
 const Home = ({movieList}) => {
     const [upcoming, setUpcoming] = useState([]);

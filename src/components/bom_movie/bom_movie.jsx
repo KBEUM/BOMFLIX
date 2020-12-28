@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import { koreaMovie, recomendMovie, recomend2ndMovie } from '../../service/movieListHardCoding';
+import { koreaMovie, recomendMovie, recomend2ndMovie } from '../../service/movie_list_hardcoding';
 import Header from '../header/header';
-import MainPoster from '../mainPoster/mainPoster';
-import MovieList from '../movie_list/movieList';
+import MainPoster from '../main_poster/main_poster';
+import MovieList from '../movie_list/movie_list';
 
 const BomMovie = ({movieList}) => {
     

@@ -1,12 +1,11 @@
 import React from 'react';
 import Home from './components/home/home';
-import styles from './app.module.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import BomMovie from './components/bomMovie/bomMovie';
+import BomMovie from './components/bom_movie/bom_movie';
 
 function App({movieList}) {
   return (
-    <div className={styles.main}>
+    <div>
       <BrowserRouter basename="/bomflix">
         <Switch>
           <Route exact path="/">

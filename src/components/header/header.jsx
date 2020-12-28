@@ -45,7 +45,7 @@ const Header = ({movieList, searchMovieInfo}) => {
             <div className={styles.behind}>
                 <form onSubmit={onSubmit}>
                     <input  className={styles.search} size="15" ref={inputRef} type="search" placeholder="제목"/>
-                    <button className={styles.btn}><i className={`fas fa-search ${styles.emoji}`} /></button>
+                    <button className={styles.btn}><i className={`fas fa-search`} /></button>
                 </form>
                 <div>
                 <img className={styles.profile} src="./image/profile.jpg" alt="profile"/>
