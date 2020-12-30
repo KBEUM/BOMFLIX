@@ -11,7 +11,7 @@ https://kbeum.github.io/bomflix
 - Youtbe API를 이용하여 Trailer 재생
 - React router를 이용하여 내가 좋아하고 추천하는 영화목록을 볼 수 있는 화면 구현
 
-## Component 간략설명
+## Components 간략설명
 
 - BomMovie : 하드코딩 된 영화정보들 가져와서 BoM의 영화들 화면 구현
 - Header : react-router를 사용하여 화면 전환 및 TMDB API를 사용한 검색기능
