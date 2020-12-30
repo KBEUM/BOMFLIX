@@ -1,7 +1,7 @@
 # Bomflix
 
 React를 사용하여 Netflix 웹사이트 디자인을 기본으로 하여 만든 웹사이트입니다.  
-[label](kbeum.github.io/bomflix/)  
+kbeum.github.io/bomflix/  
 ![bomflixWeb](/public/image/bomflix-min.png)
 
 ## 주요기능
